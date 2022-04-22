@@ -74,6 +74,16 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# pycharm
+docs/.keep
+.idea/
+
+# pyenv
+.python-version
+
+# Maven
+target/
 ```
 
 ## Configure pip

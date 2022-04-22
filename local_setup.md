@@ -36,8 +36,8 @@ source ~/.zshrc
 [hub]
 	protocol = ssh
 [user]
-	email = ndeslandes@upgrade.com
-	name = Nicolas Deslandes
+	email = yname@upgrade.com
+	name = Your Name
 [push]
 	default = current
 [credential]

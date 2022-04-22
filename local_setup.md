@@ -49,6 +49,10 @@ extra-index-url = https://artifactory.build.upgrade.com/artifactory/api/pypi/pyp
 Download settings.xml from https://github.com/Credify/devops/blob/master/settings.xml to ~/.m2 directory.
 
 ## Configure Docker
+```sh
+brew install docker
+```
+
 ~/.docker/config.json
 ```json
 {
@@ -123,5 +127,7 @@ brew install --cask iterm2
 brew install --cask keybase
 brew install --cask visual-studio-code
 brew install --cask pycharm-ce
+brew install --cask intellij-idea-ce
 brew install --cask dbvisualizer
+brew install --cask 1password
 ```

@@ -3,7 +3,7 @@
 ## Install brew
 ```commandline
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-append eval "$(/opt/homebrew/bin/brew shellenv)" to ~/.zprofile
+echo "eval \"\$(/opt/homebrew/bin/brew shellenv)\"" >> ~/.zprofile
 source ~/.zprofile
 
 append alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew' to ~/.zshrc
@@ -16,11 +16,12 @@ source ~/.zshrc
 ```commandLine
 brew install pyenv
 brew install pyenv-virtualenv
-append eval "$(pyenv init --path)"' to ~/.zprofile
-append eval "$(pyenv init -)" to ~/.zshrc
-append eval "$(pyenv virtualenv-init -)" to ~/.zshrc
 
+echo "eval \"\$(pyenv init --path)\"" >> ~/.zprofile
 source ~/.zprofile
+
+echo "eval \"\$(pyenv init -)\"" >> ~/.zshrc
+echo "eval \"\$(pyenv virtualenv-init -)\"" >> ~/.zshrc
 source ~/.zshrc
 ```
 
